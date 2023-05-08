@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tu mejor amigo en casa</title>
+</head>
+<body>
+    <section id="home-p" class="home-p active">
+        <div class="cont-home">
+            <div class="cont-superior">
+                <a href="index.html">
+                    <img src="Imagenes/chevron-left.svg" alt="">
+                </a>
+                <h1>Buscar</h1>
+            </div>
+            <div class="cont-buscar">
+                <img src="Imagenes/search.svg" alt="">
+                <input type="search" >
+            </div>
+            <div class="cont-botones">
+                <button id="btn-3" class="active" onclick="activarDog()">
+                    <div>
+                        <img src="Imagenes/fa-solid_dog.svg" alt="">
+                    </div>
+                    <h2>Perros</h2>
+                </button>
+                <button id="btn-4" class="" onclick="activarCat()">
+                    <div>
+                       <img src="Imagenes/fa-solid_cat.svg" alt="">
+                    </div>
+                    <h2>Gatos</h2>
+                </button>
+            </div>
+            <div id="targets-dog" class="tarjetas active">
+                <div class="card">
+                    <button class="img" href="infotarget.html" onclick="dog1()">
+                        <img src="Imagenes/ivana.png" alt="">
+                    </button>
+                    <h2>Ivanna</h2>
+                    <h5>Corgi</h5>
+                    <div class="precio-card">
+                        <h2>$400</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" href="infotarget.html" onclick="dog1()">
+                        <img src="Imagenes/alvan.png" alt="">
+                    </button>                  
+                    <h2>Alban</h2>
+                    <h5>Corgi</h5>
+                    <div class="precio-card">
+                        <h2>$300</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" href="infotarget.html" onclick="dog1()">
+                        <img src="Imagenes/karsten.png" alt="">
+                    </button>                    
+                    <h2>karsten</h2>
+                    <h5>Buildog</h3>
+                    <div class="precio-card">
+                        <h2>$200</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" href="infotarget.html" onclick="dog1()">
+                        <img src="Imagenes/reigner.png" alt="">
+                    </button>                    
+                    <h2>Reiger</h2>
+                    <h5>Buildog</h5>
+                    <div class="precio-card">
+                        <h2>$240</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="targets-cat" class="tarjetas ">
+                <div class="card">
+                    <button class="img" onclick="cat1()">
+                        <img src="Imagenes/ariana.png" alt="">
+                    </button>
+                    <h2>Ariana</h2>
+                    <h5>Graycat</h5>
+                    <div class="precio-card">
+                        <h2>$40</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" onclick="cat1()">
+                        <img src="Imagenes/remi.png" alt="">
+                    </button>               
+                    <h2>Remi</h2>
+                    <h5>Whitecat</h5>
+                    <div class="precio-card">
+                        <h2>$70</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" onclick="cat1()">
+                        <img src="Imagenes/alex.png" alt="">
+                    </button>                    
+                    <h2>Alex</h2>
+                    <h5>Siamese</h3>
+                    <div class="precio-card">
+                        <h2>$100</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="img" onclick="cat1()">
+                        <img src="Imagenes/zoe.png" alt="">
+                    </button>                    
+                    <h2>Zoe</h2>
+                    <h5>Persian</h5>
+                    <div class="precio-card">
+                        <h2>$80</h2>
+                        <img src="Imagenes/sm-heart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dog1" class="target-cont">
+        <div class="cont-superior">
+            <button class="boton" onclick="activarDog(), home_p()">
+                <img src="Imagenes/chevron-left-white.svg" alt="">
+            </button>
+            <img src="Imagenes/heart-white.svg" alt="">
+        </div>
+        <div class="card1">
+            <div class="atributos">
+                <img src="Imagenes/karsten-big.png" alt="">
+                <div class="atrib">
+                    <h3>Edad</h3>
+                    <h5>1 Año</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Largo</h3>
+                    <h5>5-6</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Color</h3>
+                    <h5>Crema</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Genero</h3>
+                    <h5>Macho</h5>
+                </div>
+            </div>
+            <div class="nombre">
+                <h2>Karsten</h2>
+                <h5>Bulldog</h5>
+                <h3>$200</h3>
+            </div>
+            <div class="datos">
+                <div>
+                    <img src="Imagenes/rodolfo.png" alt="">
+                </div>
+                <div id="dos">
+                    <h4>Rodolfo Lopez</h4>
+                    <h5>Dueño - Medellin Colombia</h5>
+                </div>
+            </div>
+        </div>
+        <button class="botonllevar">Llevar a casa</button>
+    </section>
+    <section id="cat1" class="target-cont">
+        <div class="cont-superior">
+            <button class="boton" onclick="activarCat(), home_p()">
+                <img src="Imagenes/chevron-left-white.svg" alt="">
+            </button>
+            <img src="Imagenes/heart-white.svg" alt="">
+        </div>
+        <div class="card1">
+            <div class="atributos">
+                <img src="Imagenes/alex-big.png" alt="">
+                <div class="atrib">
+                    <h3>Edad</h3>
+                    <h5>1.2 Año</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Largo</h3>
+                    <h5>3-4</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Color</h3>
+                    <h5>Negro</h5>
+                </div>
+                <div class="atrib">
+                    <h3>Genero</h3>
+                    <h5>Macho</h5>
+                </div>
+            </div>
+            <div class="nombre">
+                <h2>Alex</h2>
+                <h5>Siamese</h5>
+                <h3>$100</h3>
+            </div>
+            <div class="datos">
+                <div>
+                    <img src="Imagenes/luisa.png" alt="">
+                </div>
+                <div id="dos">
+                    <h4>Luisa Hernandez</h4>
+                    <h5>Dueño - Pereira Colombia</h5>
+                </div>
+            </div>
+        </div>
+        <button class="botonllevar">Llevar a casa</button>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

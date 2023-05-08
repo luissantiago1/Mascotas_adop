@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--azul-oscuro);
+}
+
+:root{
+    --azul:#77aff9;
+    --azul-claro:#bdeaf7;
+    --azul-oscuro:#2c4674;
+    --azul-home: #dbeff9;
+    --azul-buscar: #f1f9fd;
+}
+
+.home{
+    width: 100%;
+    background: linear-gradient(var(--azul-claro),var(--azul));
+}
+
+.content-center{
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    min-height: 800px;
+    max-height: 900px;
+    overflow: hidden;
+}
+
+.home .cont-botones{
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.home .cont-botones button{
+    color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    background: white;
+    margin: 0 2px;   
+}
+
+.home .cont-botones button.active{
+    background: var(--azul);
+}
+
+.home h1{
+    text-align: right;
+    padding: 0 30px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+
+.home h1 strong{
+    font-weight: 700;
+}
+
+.home p{
+    width: 100%;
+    font-size: 18px;
+}
+
+.home .img-principal{
+    width: 100%;
+    height: 400px;
+    /* background: url(../Imagenes/slide1.png)no-repeat; */
+    background-size: cover;
+    position: absolute;
+    bottom: -400px;
+    left: 0;
+}
+
+.home #img-1{
+    background: url(../Imagenes/slide1.png)no-repeat;
+    background-size: cover;
+}
+
+.home #img-1.active{
+    bottom: 0;
+    transition: 1s;
+}
+
+.home #img-2{
+    background: url(../Imagenes/slide2.png)no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.home #img-2.active{
+    bottom: 0;
+    transition: 1s;
+}
+
+.home .btn-a{
+    display: inline-block;
+    background: linear-gradient(var(--azul-oscuro), var(--azul));
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.home .btn-a:hover{
+    transform: rotate(90deg);
+    transition: .5s;
+}
+.home .btn-a img{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* DE AQUI EN ADELANTE ES EL PARA EL HOME */
+
+.home-p{
+    width: 100%;
+    height: 100vh;
+    background: var(--azul-home);
+    display: none;
+}
+
+.home-p .cont-home{
+    padding: 25px;
+    background: var(--azul-home);
+
+}
+
+.home-p .cont-superior{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-p .cont-superior h1{
+    font-weight: 600;
+}
+
+.home-p .cont-superior a{
+    position: absolute;
+    top: 11%;
+    left: 0%;
+}
+
+.home-p .cont-buscar{
+    padding-top: 40px;
+    position: relative;
+}
+
+.home-p .cont-buscar img{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+}
+
+.home-p .cont-buscar input{
+    width: 100%;
+    height: 50px;
+    background: var(--azul-buscar);
+    font-size: 20px;
+    border: none;
+    padding-right:  20px;
+    padding-left:  50px;
+    border-radius: 25px;
+}
+.home-p .cont-buscar input:focus{
+    border: none;
+    outline: none;
+}
+.home-p .cont-botones{
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.home-p .cont-botones button{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    padding: 8px;
+    background: var(--azul-buscar);  
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-p .cont-botones button:hover{
+    transform: scale(1.1);
+}
+
+.home-p .cont-botones button div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--azul-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-p .cont-botones button h2{
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.home-p .cont-botones button.active{
+    background: var(--azul);
+}
+
+.home-p .cont-botones button.active div{
+    background: var(--azul-buscar);
+}
+
+.home-p .cont-botones button.active h2{
+    color: white;
+}
+
+.home-p .tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px 0px;
+    display: none;
+}
+
+.home-p .tarjetas.active{
+    display: flex;
+}
+
+.home-p .tarjetas .card{
+    text-align: start;
+    background: #fff;
+    width: 45%;
+    height: 255px;
+    border-radius: 15%;
+}
+
+.home-p .tarjetas .card .img{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border: none;
+}
+
+.home-p .tarjetas .card:nth-child(1) .img{
+    background: #e3c069;
+}
+
+.home-p .tarjetas .card:nth-child(2) .img{
+    background: #d1723f;
+}
+
+.home-p .tarjetas .card:nth-child(3) .img{
+    background: #488db3;
+}
+
+.home-p .tarjetas .card:nth-child(4) .img{
+    background: #58c084;
+}
+
+.home-p .tarjetas .card h2{
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 23px;
+}
+
+.home-p .tarjetas .card h5{
+    font-size: 15px;
+    color: #9aa7c0;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.home-p .tarjetas .card .precio-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-p .tarjetas .card .precio-card h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.home-p .tarjetas .card .precio-card img{
+    width: 15%;
+    padding-right: 10px;
+}
+
+.home-p #targets-cat .card:nth-child(1) .img{
+    background: #58c084;
+}
+
+.home-p #targets-cat .card:nth-child(2) .img{
+    background: #488db3;
+}
+
+.home-p #targets-cat .card:nth-child(3) .img{
+    background: #d1723f;
+}
+
+.home-p #targets-cat .card:nth-child(4) .img{
+    background: #e3c069;
+}
+
+/* Contenido de los tarjetas */
+.target-cont{
+    background: var(--azul-claro);
+    height: 100vh;
+    padding: 0 24px;
+    display: none;
+}
+
+.target-cont .cont-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.target-cont .cont-superior .boton{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.target-cont .card1 .atributos{
+    margin: 0px -24px;
+    margin-top: -104px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #488db3;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.target-cont .card1 .atributos img{
+    position: absolute;
+}
+
+.target-cont .card1 .atributos .atrib{
+    text-align: center;
+    width: 78px;
+    height: 78px;
+    background: #ffffffd9;
+    z-index: 1;
+    margin-bottom: 20px;
+    border-radius: 25%;
+}
+
+.target-cont .card1 .atributos .atrib h3{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.target-cont .card1 .atributos .atrib h5{
+    margin-top: 15px;
+    font-size: 15px;
+    color:#9aa7c0;
+    font-weight: 500;
+}
+
+.target-cont .nombre{
+    position: relative;
+}
+
+.target-cont .nombre h2{
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.target-cont .nombre h5{
+    padding-top: 5px;
+    font-size: 20px;
+    color: #8197b4;
+    font-weight: 500;
+}
+
+.target-cont .nombre h3{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 30px;
+}
+
+.target-cont .datos{  
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+.target-cont .datos #dos{
+    padding-left: 15px;
+}
+
+.target-cont .datos #dos h4{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.target-cont .datos #dos h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8197b4;
+}
+
+.target-cont .botonllevar{
+    font-size: 23px;
+    font-weight: 400;
+    color: #fff;
+    background: #58c084;
+    margin-top: 35px;
+    height: 60px;
+    width: 100%;
+    border: 0;
+    border-radius: 60px;
+}
+
+#cat1 .card1 .atributos{
+    background-color: #d1723f;
+}
+
+/* Mostrar informacion de las tarjetas */
+#home-p.active{
+    display: inherit; 
+}
+
+#dog1.active{
+    display: inherit;
+}
+
+#cat1.active{
+    display: inherit;
+}
